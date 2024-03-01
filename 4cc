@@ -1319,6 +1319,9 @@ function library:AddWindow(text)
 			obj6.TextColor3 = Color3.new(0.772549, 0.772549, 0.772549)
 			obj6.TextSize = 14
 			obj6.TextXAlignment = Enum.TextXAlignment.Left  
+			obj6.TextStrokeColor3 = Color3.fromRGB(0,0,0)
+			obj6.TextStrokeTransparency = 0.5
+
 
 			local AC = function(PassBox)
 				PassBox.Text=colador(obj5.Text,Type)
@@ -1699,12 +1702,14 @@ function library:AddWindow(text)
 			TextLabel.Position = UDim2.new(0.0833906233, 0, 0.0133694736, 0)
 			TextLabel.Size = UDim2.new(0, 220, 0, 15)
 			TextLabel.ZIndex = 15
-			TextLabel.Font = Enum.Font.SourceSansBold
+			TextLabel.Font = Enum.Font.SourceSans
 			TextLabel.Text = Text
-			TextLabel.TextColor3 = Color3.fromRGB(84, 84, 84)
+			TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+			TextLabel.TextStrokeColor3 = Color3.fromRGB(0,0,0)
 			TextLabel.TextSize = 14.000
 			TextLabel.TextXAlignment = Enum.TextXAlignment.Left
-
+			TextLabel.TextStrokeTransparency = 0.4
+			
 			Interactive.Name = "Interactive"
 			Interactive.Parent = TemplateToggle
 			Interactive.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
